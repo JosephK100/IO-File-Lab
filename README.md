@@ -4,15 +4,29 @@ Joseph Kloepper
 ```
 Algorithm/Pseudocode
 
-Create variables for the the data.csv file.
-Initialize the first two integers inside the file, followed by the string. 
+Create:
+    Variables for the the data.csv file
+    A file pointer to open data.csv
+    A stringstream to break up the lines into parts
+    A string to support each line
+    Strings for the csv fields (temporarily)
+    Integers for the converted numbers
+    A delimiter (char)
 
-
-
-Main function
-    Use a keepGoing loop to -xyz.
-    Add the two integers in the csv file.
-    Print the respective string x amount of times. 
+Main function:
+    Open the data.csv file
+    Set keepGoing to true
+    Use the keepGoing loop to:
+        Loop through the lines
+        Read the lines
+        Put the lines into stringstream
+        Use getline + delimiter to retreive the first and second number as strings
+        Use getline to retreive the word from csv file
+        Convert the two strings into integers
+        Add those two integers
+        Print the respective string x amount of times.
+    Set keepGoing to false.
+         
 
 
 ```
