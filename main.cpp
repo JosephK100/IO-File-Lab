@@ -8,7 +8,7 @@ int main(){
 	std::stringstream lineParser;
 	std::string fieldOne;
 	std::string fieldTwo;
-	std::string wordField
+	std::string wordField;
 	int firstNum;
 	int secondNum;
 //Test to make sure the file is actually opened.	
@@ -20,4 +20,16 @@ int main(){
 	while (getline(csvFile, fileLine)){
 		lineParser.clear();
 		lineParser.str(fileLine);
+		std::stringstream change;
+		getline(lineParser, fieldOne, ',');//Get line, first int
+		getline(lineParser, fieldTwo, ',');//Get line, second int
+		getline(lineParser, wordField);//Get line, word
+		
+		change.clear();
+		change.str(fieldOne);
+		change >> firstNum;
+
+		change.clear();
+		change.str(fieldTwo);
+		change >> secondNum;
 	}
