@@ -15,8 +15,7 @@ Create:
 
 Main function:
     Open the data.csv file
-    Set keepGoing to true
-    Use the keepGoing loop to:
+    Use a loop to:
         Loop through the lines
         Read the lines
         Put the lines into stringstream
@@ -25,7 +24,7 @@ Main function:
         Convert the two strings into integers
         Add those two integers
         Print the respective string x amount of times.
-    Set keepGoing to false.
+    End the loop
          
 
 
