@@ -16,6 +16,7 @@ int main(){
 	if (!csvFile.is_open()){
 		std::cout << "Issue opening file.\n";
 		return 1;
+	}
 //Orignially wanted to use keepGoing for this part, but this works way better.
 	while (getline(csvFile, fileLine)){
 		lineParser.clear();
@@ -32,4 +33,12 @@ int main(){
 		change.clear();
 		change.str(fieldTwo);
 		change >> secondNum;
+
+		int sum = firstNum + secondNum;
+		for (int i = 0; i < sum; i++){
+			std::cout << wordField << " ";
+		}
+		std::cout << "\n";
 	}
+	
+}
